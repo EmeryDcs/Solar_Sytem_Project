@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Canvas, useThree } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { SolarSytem } from '../src/components/solarsystem';
+import { InfoPlanet } from './components/controls/infoPlanet';
 
 const CanvasContainer = styled.div`
   width: 100%;
@@ -10,16 +11,19 @@ const CanvasContainer = styled.div`
 `;
 
 function App() {
-  
-  return (
-    // <CanvasContainer>
-      <Canvas>
-        {/* <Suspense fallback={null}> */}
-        <SolarSytem />
-        {/* </Suspense> */}
-      </Canvas>
-    // </CanvasContainer>
-  );
+
+	console.log("app");
+
+	return (
+		<div>
+			<Canvas>
+				{/* <Suspense fallback={null}> */}
+				<SolarSytem />
+				{/* </Suspense> */}
+			</Canvas>
+			<InfoPlanet nom={'terre'}/>
+		</div>
+	);
 }
 
 export default App
