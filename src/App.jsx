@@ -21,7 +21,7 @@ function App() {
 				<SolarSytem />
 				{/* </Suspense> */}
 			</Canvas>
-			<InfoPlanet nom={'terre'}/>
+			<InfoPlanet nom={'pluton'}/>
 		</div>
 	);
 }

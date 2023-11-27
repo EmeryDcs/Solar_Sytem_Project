@@ -1,3 +1,12 @@
+@font-face {
+	font-family: Cinzel;
+	src: url(./fonts/Cinzel-VariableFont_wght.woff);
+}
+@font-face {
+	font-family: SmoochSans;
+	src: url(./fonts/SmoochSans-VariableFont_wght.woff);
+}
+
 html,
 body,
 #root {
@@ -17,34 +26,78 @@ body,
 }
 
 .infoPlanete {
-	background-color: red;
+	/* background-color: red; */
 	z-index: 2;
 	position: absolute;
-	top: 10vh;
-	left: 50vw;
+	top: 50vh;
+	left: 5vw;
 	color: white;
+	overflow-y: scroll;
+	max-height: 50vh;
+}
+
+.infoPlanete img{
+	position: absolute;
+	width:40px;
+	height: 40px;
+	top:0;
+	right: 0;
+	margin: 20px;
 }
 
 .infoPlanete h2 {
 	font-size: 60px;
+	font-family: Cinzel;
+	font-weight: normal;
+}
+
+.infoPlanete .trait{
+	border-bottom: 1px solid white;
+	margin: 20px 0;
 }
 
 .infoPlanete ul{
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 25vw;
+	max-width: 90vw;
 }
 
 .infoPlanete ul li{
 	margin: 10px;
 	list-style-type: none;
+	width: 45%;
+	font-family: SmoochSans;
+	font-weight: bold;
 }
 
 .infoPlanete ul li div{
 	font-size: 24px;
+	font-family: Cinzel;
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+.infoPlanete ul li div sup{
+	font-size: 12px;
 }
 
 canvas {
 	width: 100vw;
 	height: 100vh;
+	overflow-y: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+	.infoPlanete{
+		overflow:visible;
+		max-height: 80vh;
+		top: 10vh;
+		left: 50vw;
+	}
+
+	.infoPlanete ul{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 45vw;
+	}
 }

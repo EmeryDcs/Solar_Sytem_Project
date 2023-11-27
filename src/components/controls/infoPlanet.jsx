@@ -63,17 +63,21 @@ export function InfoPlanet(nom){
         <div className="infoPlanete">
             <h2>{planetData.name}</h2>
 
+            <img src="./src/img/svg/circle-xmark-regular.svg" alt="Fermer Focus Planète" />
+
+            <div className="trait"></div>
+
             <ul>
                 <li className="infoLune">Lunes : <div>{planetData.moons[0].moon}</div></li>
-                <li className="infoMasse">Masse : <div>{planetData.mass.massValue} 10 <small>{planetData.mass.massExponent}</small></div></li>
-                <li className="infoVolume">Volume : <div>{planetData.vol.volValue}</div></li>
-                <li className="infoDensite">Densité : <div>{planetData.density}</div></li>
-                <li className="infoGravité">Gravité : <div>{planetData.gravity}</div></li>
-                <li className="infoVitesseEchappement">Vitesse d'échappement : <div>{planetData.escape}</div></li>
-                <li className="infoRayon">Rayon : <div>{planetData.meanRadius}</div></li>
-                <li className="infoRevolution">Révolution : <div>{planetData.sideralOrbit}</div></li>
-                <li className="infoRotation">Rotation : <div>{planetData.sideralRotation}</div></li>
-                <li className="infoDecouverte">Découverte : <div>{planetData.discoveredBy}</div></li>
+                <li className="infoMasse">Masse : <div>{planetData.mass.massValue} 10<sup>{planetData.mass.massExponent}</sup> kg</div></li>
+                <li className="infoVolume">Volume : <div>{planetData.vol.volValue} 10<sup>{planetData.vol.volExponent}</sup> km<sup>3</sup></div></li>
+                <li className="infoDensite">Densité : <div>{planetData.density} g.cm<sup>3</sup></div></li>
+                <li className="infoGravité">Gravité : <div>{planetData.gravity} m/s<sup>2</sup></div></li>
+                <li className="infoVitesseEchappement">Vitesse d'échappement : <div>{planetData.escape} m/s</div></li>
+                <li className="infoRayon">Rayon : <div>{planetData.meanRadius} km</div></li>
+                <li className="infoRevolution">Révolution : <div>{planetData.sideralOrbit} jours</div></li>
+                <li className="infoRotation">Rotation : <div>{planetData.sideralRotation} heures</div></li>
+                <li className="infoDecouverte">Découverte : <div>{planetData.discoveredBy ? planetData.discoveredBy : 'Antiquité'}</div></li>
                 <li className="infoTemperature">Température moyenne : <div>{planetData.avgTemp} °K</div></li>
             </ul>
         </div>
