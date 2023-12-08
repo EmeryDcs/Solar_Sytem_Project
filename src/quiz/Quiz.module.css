@@ -1,0 +1,107 @@
+@font-face {
+	font-family: Cinzel;
+	src: url(/src/fonts/Cinzel-VariableFont_wght.woff);
+}
+
+@font-face {
+	font-family: SmoochSans;
+	src: url(/src/fonts/SmoochSans-VariableFont_wght.woff);
+}
+
+body {
+  font-family: SmoochSans;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('/public/background.jpeg');
+  background-size: cover;
+}
+
+.titreQuiz{
+    display: block;
+    width: 100%;
+}
+
+.quizContainer {
+    max-width: 600px;
+    /* width: 100%; */
+    text-align: center;
+    margin: 10px 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 20px 20px 10px black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.questionContainer {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.answerButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    font-family: SmoochSans;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #4c4eaf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.resultContainer {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #FFA500;
+}
+
+.prev_btn{
+    margin: 0 5px;
+}
+
+.next_btn{
+    margin: 0 5px;
+}
+
+.divQuiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerQuiz{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 40vw;
+    }
+}

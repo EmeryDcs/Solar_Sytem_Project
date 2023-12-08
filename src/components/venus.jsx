@@ -9,7 +9,7 @@ import {HoveredMesh} from './controls/hoveredMesh';
 import { useCursorStyle } from "./controls/useCursorStyle";
 import { venusDistance, venusOrbit, venusRotation, venusSize } from "./controls/size";
 import { useCameraFollow } from "./controls/useCameraFollow";
-import { PlanetContext } from './../App';
+import { PlanetContext } from './../pageInterface3d';
 
 export function Venus(){
 

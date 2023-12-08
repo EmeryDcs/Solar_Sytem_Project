@@ -7,7 +7,7 @@ import { HoveredMesh } from './controls/hoveredMesh';
 import { useCursorStyle } from "./controls/useCursorStyle";
 import { marsDistance, marsOrbit, marsRotation, marsSize } from "./controls/size";
 import { useCameraFollow } from "./controls/useCameraFollow";
-import { PlanetContext } from './../App';
+import { PlanetContext } from './../pageInterface3d';
 export function Mars(){
 
     const [marsMap] = useLoader(TextureLoader, [MarsTexture]);

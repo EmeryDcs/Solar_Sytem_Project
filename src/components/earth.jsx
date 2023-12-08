@@ -11,7 +11,7 @@ import { HoveredMesh } from './controls/hoveredMesh';
 import { useCursorStyle } from "./controls/useCursorStyle";
 import { earthDistance, earthOrbit, earthRotation, earthSize } from "./controls/size";
 import { useCameraFollow } from "./controls/useCameraFollow";
-import { PlanetContext } from './../App';
+import { PlanetContext } from './../pageInterface3d';
 
 export function Earth(){
     const [colorMap, normalMap, specularMap, cloudMap] = useLoader(TextureLoader, [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudMap]);

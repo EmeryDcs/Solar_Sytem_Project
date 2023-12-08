@@ -8,7 +8,7 @@ import { useCursorStyle } from "./controls/useCursorStyle";
 import {HoveredMesh} from './controls/hoveredMesh';
 import { mercuryDistance, mercuryOrbit, mercuryRotation, mercurySize } from "./controls/size";
 import { useCameraFollow } from "./controls/useCameraFollow";
-import { PlanetContext } from './../App';
+import { PlanetContext } from './../pageInterface3d';
 
 export function Mercury(){
 
